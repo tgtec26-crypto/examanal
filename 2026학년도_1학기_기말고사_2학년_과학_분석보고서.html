@@ -306,9 +306,89 @@
     </div>
   </div>
 
-  <!-- ══ 2. 점수 분포 & 등급 분포 ════════════════════════ -->
+  <!-- ══ 2. 반별 평균 점수 ══════════════════════════════════ -->
   <div class="section">
-    <div class="section-title"><div class="icon">2</div>점수 분포 및 등급 분포</div>
+    <div class="section-title"><div class="icon">2</div>반별 평균 점수</div>
+    <div class="table-wrap" style="margin-bottom:20px">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>반</th>
+              <th>인원</th>
+              <th>전체 평균 <span style="font-weight:400;opacity:0.7">(60점)</span></th>
+              <th>물리학 <span style="font-weight:400;opacity:0.7">(15점)</span></th>
+              <th>화학 <span style="font-weight:400;opacity:0.7">(15점)</span></th>
+              <th>생명과학 <span style="font-weight:400;opacity:0.7">(15점)</span></th>
+              <th>지구과학 <span style="font-weight:400;opacity:0.7">(15점)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td><strong>1반</strong></td>
+                <td>19명</td>
+                <td style="font-weight:700">38.9</td>
+                <td>11.6</td><td>11.2</td><td>9.2</td><td>6.9</td>
+              </tr>
+            <tr>
+                <td><strong>2반</strong></td>
+                <td>20명</td>
+                <td class="rate-high">42.2</td>
+                <td>11.1</td><td>11.6</td><td>10.8</td><td>8.8</td>
+              </tr>
+            <tr>
+                <td><strong>3반</strong></td>
+                <td>20명</td>
+                <td style="font-weight:700">39.1</td>
+                <td>12.2</td><td>11.2</td><td>8.9</td><td>6.8</td>
+              </tr>
+            <tr>
+                <td><strong>4반</strong></td>
+                <td>20명</td>
+                <td style="font-weight:700">40.2</td>
+                <td>10.9</td><td>10.6</td><td>9.1</td><td>9.7</td>
+              </tr>
+            <tr>
+                <td><strong>5반</strong></td>
+                <td>20명</td>
+                <td class="rate-low">37.0</td>
+                <td>10.7</td><td>10.2</td><td>8.9</td><td>7.2</td>
+              </tr>
+            <tr>
+                <td><strong>6반</strong></td>
+                <td>20명</td>
+                <td style="font-weight:700">40.7</td>
+                <td>11.4</td><td>10.9</td><td>9.9</td><td>8.4</td>
+              </tr>
+            <tr style="background:#eff6ff; font-weight:700; border-top:2px solid #1e40af">
+                <td><strong>전체</strong></td>
+                <td>119명</td>
+                <td>39.7</td>
+                <td>11.3</td><td>10.9</td><td>9.5</td><td>8.0</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="chart-card">
+        <h3>반별 전체 평균 점수 (60점 만점)</h3>
+        <div class="chart-wrapper" style="height:280px">
+          <canvas id="classAvgChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3>반별 과목 평균 점수 (과목별 15점 만점)</h3>
+        <div class="chart-wrapper" style="height:280px">
+          <canvas id="classSubjChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ 3. 점수 분포 & 등급 분포 ════════════════════════ -->
+  <div class="section">
+    <div class="section-title"><div class="icon">3</div>점수 분포 및 등급 분포</div>
     <div class="two-col">
       <div class="chart-card">
         <h3>점수 분포 히스토그램</h3>
@@ -325,9 +405,9 @@
     </div>
   </div>
 
-  <!-- ══ 3. 문항별 분석 표 ════════════════════════════════ -->
+  <!-- ══ 4. 문항별 분석 표 ════════════════════════════════ -->
   <div class="section">
-    <div class="section-title"><div class="icon">3</div>문항별 분석 표</div>
+    <div class="section-title"><div class="icon">4</div>문항별 분석 표</div>
     <div class="legend-row">
       <span style="font-weight:600; color:#374151; margin-right:4px">정답률:</span>
       <div class="legend-item"><div class="legend-dot" style="background:#16a34a"></div>≥70% 양호</div>
@@ -526,9 +606,9 @@
     </div>
   </div>
 
-  <!-- ══ 4. 문항별 정답률 막대그래프 ══════════════════════ -->
+  <!-- ══ 5. 문항별 정답률 막대그래프 ══════════════════════ -->
   <div class="section">
-    <div class="section-title"><div class="icon">4</div>문항별 정답률 막대그래프</div>
+    <div class="section-title"><div class="icon">5</div>문항별 정답률 막대그래프</div>
     <div class="chart-card">
       <div class="legend-row" style="margin-bottom:12px">
         <div class="legend-item"><div class="legend-dot" style="background:rgba(59,130,246,0.8)"></div>물리학 (Q1~6)</div>
@@ -542,9 +622,9 @@
     </div>
   </div>
 
-  <!-- ══ 5. 과목별 분석 ════════════════════════════════════ -->
+  <!-- ══ 6. 과목별 분석 ════════════════════════════════════ -->
   <div class="section">
-    <div class="section-title"><div class="icon">5</div>과목별 분석</div>
+    <div class="section-title"><div class="icon">6</div>과목별 분석</div>
     <div class="chart-card">
       <h3>과목별 평균 정답률 및 평균 변별도 비교</h3>
       <div class="chart-wrapper" style="height:320px">
@@ -553,9 +633,9 @@
     </div>
   </div>
 
-  <!-- ══ 6. 등급별 문항 정답률 히트맵 ════════════════════ -->
+  <!-- ══ 7. 등급별 문항 정답률 히트맵 ════════════════════ -->
   <div class="section">
-    <div class="section-title"><div class="icon">6</div>등급별 문항 정답률</div>
+    <div class="section-title"><div class="icon">7</div>등급별 문항 정답률</div>
     <div class="chart-card">
       <h3>등급별 문항 정답률 비교 (1~5등급)</h3>
       <div class="legend-row" style="margin-bottom:12px">
@@ -576,9 +656,9 @@
     </div>
   </div>
 
-  <!-- ══ 7. 추가 인사이트 ══════════════════════════════════ -->
+  <!-- ══ 8. 추가 인사이트 ══════════════════════════════════ -->
   <div class="section">
-    <div class="section-title"><div class="icon">7</div>추가 인사이트</div>
+    <div class="section-title"><div class="icon">8</div>추가 인사이트</div>
     <div class="insight-grid">
       <!-- 최고 정답률 TOP 3 -->
       <div class="insight-card">
@@ -671,6 +751,73 @@
 <script>
 Chart.defaults.font.family = "'Apple SD Gothic Neo', 'Noto Sans KR', '맑은 고딕', sans-serif";
 Chart.defaults.color = '#374151';
+
+// ── 반별 평균 점수 ───────────────────────────────────────────
+(function() {
+  const labels = ["1반", "2반", "3반", "4반", "5반", "6반"];
+  const classAvg = [38.9, 42.2, 39.1, 40.2, 37.0, 40.7];
+  const gradeAvg = 39.7;
+
+  new Chart(document.getElementById('classAvgChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          type: 'line',
+          label: '학년 평균 (' + gradeAvg + '점)',
+          data: labels.map(() => gradeAvg),
+          borderColor: '#dc2626',
+          borderDash: [6, 4],
+          borderWidth: 2,
+          pointRadius: 0,
+        },
+        {
+          label: '반 평균 (점)',
+          data: classAvg,
+          backgroundColor: classAvg.map(v => v >= gradeAvg ? 'rgba(30,64,175,0.8)' : 'rgba(59,130,246,0.5)'),
+          borderWidth: 0,
+          borderRadius: 6,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top', labels: { font: { size: 12 } } },
+        tooltip: { callbacks: { label: (ctx) => ctx.dataset.label.split(' (')[0] + ': ' + ctx.raw + '점' } }
+      },
+      scales: {
+        x: { grid: { display: false } },
+        y: { beginAtZero: true, max: 60, ticks: { callback: v => v + '점' }, grid: { color: 'rgba(0,0,0,0.05)' } }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('classSubjChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        { label: '물리학', data: [11.6, 11.1, 12.2, 10.9, 10.7, 11.4], backgroundColor: 'rgba(59,130,246,0.8)', borderRadius: 4, borderWidth: 0 },
+        { label: '화학', data: [11.2, 11.6, 11.2, 10.6, 10.2, 10.9], backgroundColor: 'rgba(16,185,129,0.8)', borderRadius: 4, borderWidth: 0 },
+        { label: '생명과학', data: [9.2, 10.8, 8.9, 9.1, 8.9, 9.9], backgroundColor: 'rgba(245,158,11,0.8)', borderRadius: 4, borderWidth: 0 },
+        { label: '지구과학', data: [6.9, 8.8, 6.8, 9.7, 7.2, 8.4], backgroundColor: 'rgba(239,68,68,0.8)', borderRadius: 4, borderWidth: 0 }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top', labels: { font: { size: 12 } } },
+        tooltip: { callbacks: { label: (ctx) => ctx.dataset.label + ': ' + ctx.raw + '점' } }
+      },
+      scales: {
+        x: { grid: { display: false } },
+        y: { beginAtZero: true, max: 15, ticks: { callback: v => v + '점' }, grid: { color: 'rgba(0,0,0,0.05)' } }
+      }
+    }
+  });
+})();
 
 // ── 히스토그램 ──────────────────────────────────────────────
 (function() {
